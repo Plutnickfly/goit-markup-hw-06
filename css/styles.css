@@ -536,7 +536,11 @@ h3.people-name {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-
+.button:hover,
+.button:focus {
+  transition: background-color 250ms var(--cubic-timing),
+    color 250ms var(--cubic-timing), box-shadow 250ms var(--cubic-timing);
+}
 .service-button {
   padding: 10px 32px;
   border: 1px solid var(--button-blue-color);
