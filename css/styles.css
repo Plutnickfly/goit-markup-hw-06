@@ -1,6 +1,6 @@
 :root {
   --primary-text-color: #212121;
-  --button-blue-color: #2196f3;
+  --blue-color: #2196f3;
   --secondary-text-color: #ffffff;
   --footer-color: #2f303a;
   --font-logo: "Raleway", sans-serif;
@@ -68,6 +68,16 @@ p {
 .nav-list {
   position: relative;
 }
+.nav-list:hover,
+.nav-list:focus {
+  color: var(--blue-color);
+  transition: color 250ms var(--cubic-timing);
+}
+
+/* .nav-list:hover,
+.nav-list:focus {
+  transition: color 1250ms var(--cubic-timing);
+} */
 
 .current::after {
   content: "";
@@ -78,7 +88,7 @@ p {
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: var(--button-blue-color);
+  background-color: var(--blue-color);
   border-radius: 2px;
 }
 
@@ -92,7 +102,7 @@ p {
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: var(--button-blue-color);
+  background-color: var(--blue-color);
   border-radius: 2px;
   opacity: 0;
   transition: opacity 250ms var(--cubic-timing);
@@ -199,6 +209,12 @@ a {
   padding-top: 32px;
 }
 
+.Contacts-Section-Link:hover,
+.Contacts-Section-Link:focus {
+  color: var(--blue-color);
+  transition: color 250ms var(--cubic-timing);
+}
+
 .contact-svg {
   fill: currentColor;
   margin-right: 10px;
@@ -237,12 +253,12 @@ a {
 }
 
 .current {
-  color: var(--button-blue-color);
+  color: var(--blue-color);
 }
 
 .list a:hover,
 .list a:focus {
-  color: var(--button-blue-color);
+  color: var(--blue-color);
 }
 
 header {
@@ -255,6 +271,23 @@ header {
   line-height: 1.67;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+
+.what-we-do-frame {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
 .clients-list {
@@ -289,6 +322,7 @@ header {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  color: var(-social-link-color);
 }
 
 .clients:not(:last-child) {
@@ -298,18 +332,27 @@ header {
 .client-logo {
   width: 105px;
   height: 60px;
-  fill: var(--social-link-color);
+  color: inherit;
+  /* fill: var(--social-link-color); */
 }
 
 .client-link:hover .client-logo,
 .client-link:focus .client-logo {
-  fill: var(--button-blue-color);
+  color: var(--blue-color);
+  transform: color 1250ms var(--cubic-timing);
 }
 
 .client-link:hover,
 .client-link:focus {
-  border-color: var(--button-blue-color);
+  border-color: var(--blue-color);
+  transform: border-color 1250ms var(--cubic-timing);
 }
+
+/* .client-link:hover,
+.client-link:focus {
+  color: var(--blue-color);
+  transition: color 1250ms var(--cubic-timing);
+} */
 
 /* .pics {
   flex-basis: calc((100% - 60px) / 3);
@@ -321,6 +364,7 @@ header {
 } */
 
 .pics-element {
+  position: relative;
   flex-basis: calc((100% - 60px) / 3);
   max-width: 370px;
 }
@@ -476,7 +520,7 @@ h3.people-name {
 }
 
 .blue {
-  color: var(--button-blue-color);
+  color: var(--blue-color);
 }
 
 .logo {
@@ -530,7 +574,7 @@ h3.people-name {
 .button:hover,
 .button:focus,
 .button-blue {
-  background-color: var(--button-blue-color);
+  background-color: var(--blue-color);
   color: var(--secondary-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -543,7 +587,7 @@ h3.people-name {
 }
 .service-button {
   padding: 10px 32px;
-  border: 1px solid var(--button-blue-color);
+  border: 1px solid var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -610,7 +654,7 @@ h3.people-name {
 
 .people-link:hover,
 .people-link:focus {
-  background-color: var(--button-blue-color);
+  background-color: var(--blue-color);
 }
 .people-link:hover .people-soc-link,
 .people-link:focus .people-soc-link {
