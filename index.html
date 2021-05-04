@@ -55,16 +55,6 @@
             <button class="button-blue service-button" data-modal-open>Заказать услугу</button>
             <!-- </div> -->
         </div>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button type="button" class="modal-btn-close" data-modal-close>
-                    <svg class="modal-icon-svg">
-                        <use href="./svg/sprite.svg#close-black"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <script src="./js/modal.js"></script>
         <section class="padding-95 top-padding">
             <div class="container">
                 <h2 class="hidden ">Качества</h2>
@@ -353,9 +343,11 @@
                         class="white ">Studio</span></a>
                 <address class="address">
                     <ul class="list white">
-                        <li> <a href="https://goo.gl/maps/2tXd7TCXXqus3JWS8 ">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="transparent "> <a href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
-                        <li class="transparent "> <a href="tel:+380961111111 ">+38 096 111 11 11</a></li>
+                        <li> <a class="link" href="https://goo.gl/maps/2tXd7TCXXqus3JWS8 ">г. Киев, пр-т Леси Украинки,
+                                26</a></li>
+                        <li class="transparent "> <a class="link"
+                                href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
+                        <li class="transparent "> <a class="link" href="tel:+380961111111 ">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -390,7 +382,16 @@
             </div>
         </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-btn-close" data-modal-close>
+                <svg class="modal-icon-svg">
+                    <use href="./svg/sprite.svg#close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

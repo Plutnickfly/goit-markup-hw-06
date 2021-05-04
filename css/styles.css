@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  /* background-color: var(--main-background); */
+  background-color: var(--main-background);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -42,6 +42,11 @@ ul,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--blue-color);
 }
 
 .list {
@@ -225,10 +230,10 @@ a {
   color: var(--blue-color);
 }
 
-.list a:hover,
+/* .list a:hover,
 .list a:focus {
   color: var(--blue-color);
-}
+} */
 
 header {
   border-bottom: 1px solid #ececec;
@@ -367,8 +372,8 @@ header {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 } */
 
-.folio-frame:hover .hidden-text,
-.folio-frame:focus .hidden-text {
+.card-link:hover .hidden-text,
+.card-link:focus .hidden-text {
   transform: translateY(0);
 }
 
@@ -393,8 +398,8 @@ header {
   height: 100%;
   font-weight: 400;
   background-color: var(--overlay-color);
+  transition: transform 250ms var(--cubic-timing);
   transform: translateY(101%);
-  /* transition: 250ms var(--cubic-timing); */
   font-size: 18px;
   line-height: 1.56;
   color: var(--secondary-text-color);
@@ -420,6 +425,9 @@ header {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
+/* .card-link:hover .folio-text {
+  text-decoration: none;
+} */
 
 .quality {
   font-size: 14px;
@@ -612,13 +620,13 @@ h3.people-name {
 .people-link:hover .people-soc-link,
 .people-link:focus .people-soc-link {
   fill: rgb(255, 255, 255);
-  transition: fill 250ms var(--cubic-timing);
 }
 
 .people-soc-link {
   fill: var(--social-link-color);
   height: 20px;
   width: 20px;
+  transition: fill 250ms var(--cubic-timing);
 }
 
 .tiles {
@@ -700,8 +708,8 @@ h3.people-name {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 350ms var(--cubic-timing),
-    visibility 350ms var(--cubic-timing);
+  transition: opacity 250ms var(--cubic-timing),
+    visibility 250ms var(--cubic-timing);
 }
 .backdrop.is-hidden {
   opacity: 0;
