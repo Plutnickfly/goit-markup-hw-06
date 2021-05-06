@@ -7,7 +7,6 @@
   --main-text-color: #757575;
   --color-transparent: rgba(255, 255, 255, 0.6);
   --button-color: #f5f4fa;
-  --main-background: #e5e5e5;
   --social-link-color: #afb1b8;
   --overlay-color: rgba(33, 150, 243, 0.9);
   --cubic-timing: cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,7 +23,6 @@ html {
 }
 
 body {
-  background-color: var(--main-background);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
