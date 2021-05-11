@@ -762,6 +762,7 @@ h2.hidden {
   opacity: 1;
   transition: opacity 250ms var(--cubic-timing),
     visibility 250ms var(--cubic-timing);
+  z-index: 1;
 }
 .backdrop.is-hidden {
   opacity: 0;
